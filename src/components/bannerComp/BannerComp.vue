@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mx-auto w-full py-8 lg:py-16 flex flex-col lg:flex-row justify-center items-center space-x-4"
+    class="container mx-auto w-full py-8 lg:py-16 flex flex-col lg:flex-row justify-center items-center lg:space-x-4"
   >
     <div class="flex-1">
       <div class="w-full xl:w-9/12">
@@ -39,7 +39,7 @@
               alt="banner-user-avatar"
             />
           </div>
-          <p class="font-normal text-base text-black">
+          <p class="font-normal text-base text-black text-center lg:text-left">
             Zahlreiche Kunden, die wir geholfen haben
           </p>
         </div>
@@ -70,21 +70,7 @@ export default {
     return {
       rightSideImage: RightSideImage,
       bannerUserAvatar,
-      currentScreenWidth: window.innerWidth,
     };
-  },
-  mounted() {
-    this.$nextTick(() => {
-      window.addEventListener("resize", this.onWindowResize);
-    });
-  },
-  beforeUnmount() {
-    window.addEventListener("resize", this.onWindowResize);
-  },
-  methods: {
-    onWindowResize() {
-      this.currentScreenWidth = innerWidth;
-    },
   },
 };
 </script>
