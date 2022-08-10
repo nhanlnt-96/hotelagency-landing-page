@@ -1,17 +1,15 @@
 <template>
-  <h1 class="bg-amber-100 text-white">test with tailwindcss</h1>
-  <img alt="Vue logo" src="./assets/logo.png"/>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header-comp/>
 </template>
 
 <script>
 
-import HelloWorld from "@/components/HelloWorld";
+import HeaderComp from '@/components/headerComp/HeaderComp';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld,
+    HeaderComp,
   },
 };
 </script>
