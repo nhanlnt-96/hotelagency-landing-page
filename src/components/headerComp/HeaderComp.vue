@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+  <nav class="bg-white border-gray-200 py-2.5 rounded">
     <div
       class="container relative flex flex-wrap justify-between items-center mx-auto pb-3.5 lg:pb-[30px] after:content-[''] after:w-full after:h-[1px] after:bg-ha-secondary after:absolute after:left-0 after:bottom-0"
     >
@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import ButtonComp from "@/components/button/ButtonComp";
+import ButtonComp from "@/components/buttonComp/ButtonComp";
 import { headerMenu } from "@/configs";
 
 export default {
