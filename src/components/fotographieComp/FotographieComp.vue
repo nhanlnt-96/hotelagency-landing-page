@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mx-auto bg-ha-gray-light lg:py-6 xl:min-h-[540px] xl:py-0 w-full flex justify-center items-center flex-col lg:flex-row"
+    class="bg-ha-gray-light lg:py-6 xl:min-h-[540px] xl:py-0 w-full flex justify-center items-center flex-col lg:flex-row"
   >
     <div
       class="w-full lg:pl-10 xl:pl-[104px] lg:w-6/12 flex justify-center items-center lg:items-start flex-col p-6 lg:p-0"

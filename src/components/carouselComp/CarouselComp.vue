@@ -96,9 +96,6 @@ export default {
       this.sliderItemsMove = `${sliderItemsWidth * (slideNumber - 1)}px`;
       this.clickedButton = slideNumber;
     },
-    onSwipe() {
-      console.log("hello world");
-    },
   },
 };
 </script>

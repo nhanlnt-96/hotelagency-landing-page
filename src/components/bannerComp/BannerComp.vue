@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mx-auto w-full py-8 lg:py-16 flex flex-col lg:flex-row justify-center items-center lg:space-x-4"
+    class="w-full py-8 lg:py-16 flex flex-col lg:flex-row justify-center items-center lg:space-x-4"
   >
     <div class="flex-1">
       <div class="w-full xl:w-9/12">
@@ -70,7 +70,28 @@ export default {
     return {
       rightSideImage: RightSideImage,
       bannerUserAvatar,
+      currentScreenWidth: 0,
     };
+  },
+  beforeCreate() {
+    this.currentScreenWidth = window.innerWidth;
+  },
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener("resize", () => {
+        this.onWindowResize();
+      });
+    });
+  },
+  beforeUnmount() {
+    window.addEventListener("resize", () => {
+      this.onWindowResize();
+    });
+  },
+  methods: {
+    onWindowResize() {
+      this.currentScreenWidth = window.innerWidth;
+    },
   },
 };
 </script>

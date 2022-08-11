@@ -1,8 +1,11 @@
 <template>
   <div class="px-2 sm:px-4">
     <header-comp />
-    <banner-comp />
-    <fotographie-comp />
+    <div class="container mx-auto space-y-5 md:space-y-11">
+      <banner-comp />
+      <fotographie-comp />
+      <image-video-comp />
+    </div>
   </div>
 </template>
 
@@ -10,10 +13,12 @@
 import HeaderComp from "@/components/headerComp/HeaderComp";
 import BannerComp from "@/components/bannerComp/BannerComp";
 import FotographieComp from "@/components/fotographieComp/FotographieComp";
+import ImageVideoComp from "@/components/imageVideoComp/ImageVideoComp";
 
 export default {
   name: "App",
   components: {
+    ImageVideoComp,
     FotographieComp,
     BannerComp,
     HeaderComp,
