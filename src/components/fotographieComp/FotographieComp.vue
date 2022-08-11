@@ -27,7 +27,7 @@
     <div
       class="w-full lg:w-6/12 flex justify-center lg:justify-end items-center"
     >
-      <image-ratio
+      <image-ratio-comp
         :image-src="RightSideImage"
         image-alt="right-side-image"
         :image-height="540"
@@ -43,17 +43,17 @@
 <script>
 import RightSideImage from "@/assets/images/fotographie/right-image.png";
 import ButtonComp from "@/components/buttonComp/ButtonComp";
-import ImageRatio from "@/components/imageRatio/ImageRatio";
 import CarouselComp from "@/components/carouselComp/CarouselComp";
 import { carouselImageData } from "@/configs";
+import ImageRatioComp from "@/components/imageRatioComp/ImageRatioComp";
 
 export default {
   name: "FotographieComp",
-  components: { CarouselComp, ImageRatio, ButtonComp },
+  components: { ImageRatioComp, CarouselComp, ButtonComp },
   data() {
     return {
       RightSideImage,
-      carouselImageData
+      carouselImageData,
     };
   },
 };

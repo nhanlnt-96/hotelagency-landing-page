@@ -5,7 +5,7 @@
     <div
       class="w-full lg:w-6/12 flex justify-center lg:justify-end items-center"
     >
-      <image-ratio
+      <image-ratio-comp
         :image-src="LeftSideImage"
         image-alt="left-side-image"
         :image-height="540"
@@ -45,15 +45,15 @@
 </template>
 
 <script>
-import ImageRatio from "@/components/imageRatio/ImageRatio";
 import ButtonComp from "@/components/buttonComp/ButtonComp";
 import LeftSideImage from "@/assets/images/influencer-makreting/left-side-image.png";
 import { carouselImageData } from "@/configs";
 import CarouselComp from "@/components/carouselComp/CarouselComp";
+import ImageRatioComp from "@/components/imageRatioComp/ImageRatioComp";
 
 export default {
-  name: "InfluencerMakreting",
-  components: { ImageRatio, ButtonComp, CarouselComp },
+  name: "InfluencerMakretingComp",
+  components: { ImageRatioComp, ButtonComp, CarouselComp },
   data() {
     return {
       LeftSideImage,

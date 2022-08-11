@@ -5,7 +5,8 @@
       <banner-comp />
       <fotographie-comp />
       <image-video-comp />
-      <influencer-makreting />
+      <influencer-makreting-comp />
+      <verbesserungen-comp />
     </div>
   </div>
 </template>
@@ -15,12 +16,14 @@ import HeaderComp from "@/components/headerComp/HeaderComp";
 import BannerComp from "@/components/bannerComp/BannerComp";
 import FotographieComp from "@/components/fotographieComp/FotographieComp";
 import ImageVideoComp from "@/components/imageVideoComp/ImageVideoComp";
-import InfluencerMakreting from "@/components/influencer-makreting/InfluencerMakreting";
+import InfluencerMakretingComp from "@/components/influencerMakretingComp/InfluencerMakretingComp";
+import VerbesserungenComp from "@/components/verbesserungenComp/VerbesserungenComp";
 
 export default {
   name: "App",
   components: {
-    InfluencerMakreting,
+    VerbesserungenComp,
+    InfluencerMakretingComp,
     ImageVideoComp,
     FotographieComp,
     BannerComp,

@@ -46,7 +46,7 @@
       </div>
     </div>
     <div class="flex justify-center items-center mt-9 lg:mt-0">
-      <image-ratio
+      <image-ratio-comp
         :image-src="rightSideImage"
         image-alt="banner-right-side-image"
         :image-width="350"
@@ -58,14 +58,14 @@
 </template>
 
 <script>
-import ImageRatio from "@/components/imageRatio/ImageRatio";
 import RightSideImage from "@/assets/images/banner/right-phone-image.png";
 import ButtonComp from "@/components/buttonComp/ButtonComp";
 import { bannerUserAvatar } from "@/configs";
+import ImageRatioComp from "@/components/imageRatioComp/ImageRatioComp";
 
 export default {
   name: "BannerComp",
-  components: { ButtonComp, ImageRatio },
+  components: { ImageRatioComp, ButtonComp },
   data() {
     return {
       rightSideImage: RightSideImage,

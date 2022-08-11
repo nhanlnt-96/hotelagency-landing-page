@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "ImageRatio",
+  name: "ImageRatioComp",
   props: {
     imageSrc: {
       type: String,
