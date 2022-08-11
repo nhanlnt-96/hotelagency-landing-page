@@ -36,7 +36,7 @@
     </div>
   </div>
   <div class="container mx-auto mt-5 md:mt-11">
-    <carousel-comp :content-data="carouselContentData" />
+    <carousel-comp :content-data="carouselImageData" />
   </div>
 </template>
 
@@ -45,9 +45,7 @@ import RightSideImage from "@/assets/images/fotographie/right-image.png";
 import ButtonComp from "@/components/buttonComp/ButtonComp";
 import ImageRatio from "@/components/imageRatio/ImageRatio";
 import CarouselComp from "@/components/carouselComp/CarouselComp";
-import Image1 from "@/assets/images/fotographie/image-1.png";
-import Image2 from "@/assets/images/fotographie/image-2.png";
-import Image3 from "@/assets/images/fotographie/image-3.png";
+import { carouselImageData } from "@/configs";
 
 export default {
   name: "FotographieComp",
@@ -55,17 +53,7 @@ export default {
   data() {
     return {
       RightSideImage,
-      carouselContentData: [
-        Image1,
-        Image2,
-        Image3,
-        Image1,
-        Image2,
-        Image3,
-        Image1,
-        Image2,
-        Image3,
-      ],
+      carouselImageData
     };
   },
 };
