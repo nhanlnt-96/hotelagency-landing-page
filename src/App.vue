@@ -1,5 +1,5 @@
 <template>
-  <div class="px-2 sm:px-4">
+  <div class="px-2 sm:px-4 xl:px-0">
     <header-comp />
     <div class="container mx-auto space-y-5 md:space-y-11">
       <banner-comp />
@@ -9,6 +9,7 @@
       <verbesserungen-comp />
       <hotelleistungen-comp />
     </div>
+    <user-quotes-comp />
   </div>
 </template>
 
@@ -20,10 +21,12 @@ import ImageVideoComp from "@/components/imageVideoComp/ImageVideoComp";
 import InfluencerMakretingComp from "@/components/influencerMakretingComp/InfluencerMakretingComp";
 import VerbesserungenComp from "@/components/verbesserungenComp/VerbesserungenComp";
 import HotelleistungenComp from "@/components/hotelleistungenComp/HotelleistungenComp";
+import UserQuotesComp from "@/components/userQuotesComp/UserQuotesComp";
 
 export default {
   name: "App",
   components: {
+    UserQuotesComp,
     HotelleistungenComp,
     VerbesserungenComp,
     InfluencerMakretingComp,
