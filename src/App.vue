@@ -7,6 +7,7 @@
       <image-video-comp />
       <influencer-makreting-comp />
       <verbesserungen-comp />
+      <hotelleistungen-comp />
     </div>
   </div>
 </template>
@@ -18,10 +19,12 @@ import FotographieComp from "@/components/fotographieComp/FotographieComp";
 import ImageVideoComp from "@/components/imageVideoComp/ImageVideoComp";
 import InfluencerMakretingComp from "@/components/influencerMakretingComp/InfluencerMakretingComp";
 import VerbesserungenComp from "@/components/verbesserungenComp/VerbesserungenComp";
+import HotelleistungenComp from "@/components/hotelleistungenComp/HotelleistungenComp";
 
 export default {
   name: "App",
   components: {
+    HotelleistungenComp,
     VerbesserungenComp,
     InfluencerMakretingComp,
     ImageVideoComp,

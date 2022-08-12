@@ -1,0 +1,32 @@
+.swiper {
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &-items {
+    display: flex;
+    position: relative;
+
+    .item {
+      &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+      }
+
+      &-wrapper {
+        padding-bottom: calc(432 / 323 * 100%);
+      }
+    }
+  }
+}

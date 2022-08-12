@@ -59,5 +59,3 @@ export default {
   name: "VerbesserungenComp",
 };
 </script>
-
-<style scoped></style>
