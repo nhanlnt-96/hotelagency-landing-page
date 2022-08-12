@@ -9,8 +9,9 @@
       <verbesserungen-comp />
       <hotelleistungen-comp />
     </div>
-    <user-quotes-comp />
   </div>
+  <user-quotes-comp />
+  <footer-comp />
 </template>
 
 <script>
@@ -22,10 +23,12 @@ import InfluencerMakretingComp from "@/components/influencerMakretingComp/Influe
 import VerbesserungenComp from "@/components/verbesserungenComp/VerbesserungenComp";
 import HotelleistungenComp from "@/components/hotelleistungenComp/HotelleistungenComp";
 import UserQuotesComp from "@/components/userQuotesComp/UserQuotesComp";
+import FooterComp from "@/components/footerComp/FooterComp";
 
 export default {
   name: "App",
   components: {
+    FooterComp,
     UserQuotesComp,
     HotelleistungenComp,
     VerbesserungenComp,

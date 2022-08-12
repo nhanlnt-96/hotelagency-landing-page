@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#F9FAFB] mt-5 md:mt-11">
     <div
-      class="container mx-auto py-12 px-5 md:py-[96px] md:px-[39px] flex justify-center items-center"
+      class="container mx-auto py-12 md:py-[96px] flex justify-center items-center"
     >
       <div class="w-full lg:w-7/12 flex flex-col justify-center items-center">
         <image-ratio-comp
@@ -52,5 +52,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>
